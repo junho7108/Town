@@ -7,53 +7,53 @@ import os
 class UploadFeedViewModel: ViewModelType {
     
     struct Input {
-        var titleDidChange: Observable<String>
-        var contentDidChange: Observable<String>
+        let titleDidChange: Observable<String>
+        let contentDidChange: Observable<String>
         
-        var didSelectImage: Observable<[UIImage]>
-        var tapRemoveImage: Observable<Void>
+        let didSelectImage: Observable<[UIImage]>
+        let tapRemoveImage: Observable<Void>
         
-        var tapCreateVoteContent: Observable<Void>
-        var tapAddVoteContent: Observable<Void>
-        var voteTitleDidChange: Observable<String>
-        var voteContentDidChange: Observable<(Int, String)>
-        var tapRemoveVoteContent: Observable<Int>
-        var tapRemoveAllVoteContnet: Observable<Void>
+        let tapCreateVoteContent: Observable<Void>
+        let tapAddVoteContent: Observable<Void>
+        let voteTitleDidChange: Observable<String>
+        let voteContentDidChange: Observable<(Int, String)>
+        let tapRemoveVoteContent: Observable<Int>
+        let tapRemoveAllVoteContnet: Observable<Void>
         
-        var tapShowTagsPage: Observable<Void>
-        var didSelectTags: Observable<Void>
-        var didSelectCategory: Observable<FeedCategory>
-        var didSelectMBTI: Observable<MBTIType>
-        var didSelectEditTags: Observable<Void>
-        var tapRemoveTags: Observable<Void>
+        let tapShowTagsPage: Observable<Void>
+        let didSelectTags: Observable<Void>
+        let didSelectCategory: Observable<FeedCategory>
+        let didSelectMBTI: Observable<MBTIType>
+        let didSelectEditTags: Observable<Void>
+        let tapRemoveTags: Observable<Void>
        
-        var tapFeedUpload: Observable<Void>
+        let tapFeedUpload: Observable<Void>
     }
     
     struct Output {
-        var editedFeed: Observable<Feed?>
-        var updateContent: Observable<String>
+        let editedFeed: Observable<Feed?>
+        let updateContent: Observable<String>
         
-        var selectedImages: Observable<[UIImage]>
-        var removeImage: Observable<Void>
+        let selectedImages: Observable<[UIImage]>
+        let removeImage: Observable<Void>
     
-        var updateVoteTitle: Observable<String>
-        var voteContentList: Observable<[String]>
-        var removeVoteContent: Observable<Void>
+        let updateVoteTitle: Observable<String>
+        let voteContentList: Observable<[String]>
+        let removeVoteContent: Observable<Void>
         
-        var showTagsPage: Observable<Void>
-        var allCategories: Observable<[FeedCategory]>
-        var selectedCategories: Observable<[FeedCategory]>
-        var originFeedCategories: Observable<[FeedCategory]>
-        var allMBTIs: Observable<[MBTIType]>
-        var selectedMBTIs: Observable<[MBTIType]>
-        var originMBTIs: Observable<[MBTIType]>
-        var selectedTags: Observable<[String]>
-        var hideTagsPage: Observable<Void>
-        var removeTags: Observable<Void>
+        let showTagsPage: Observable<Void>
+        let allCategories: Observable<[FeedCategory]>
+        let selectedCategories: Observable<[FeedCategory]>
+        let originFeedCategories: Observable<[FeedCategory]>
+        let allMBTIs: Observable<[MBTIType]>
+        let selectedMBTIs: Observable<[MBTIType]>
+        let originMBTIs: Observable<[MBTIType]>
+        let selectedTags: Observable<[String]>
+        let hideTagsPage: Observable<Void>
+        let removeTags: Observable<Void>
         
-        var uploadButtonEnabled: Observable<Bool>
-        var showUploadPage: Observable<Feed>
+        let uploadButtonEnabled: Observable<Bool>
+        let showUploadPage: Observable<Feed>
     }
     
     struct Dependencies {

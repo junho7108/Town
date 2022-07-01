@@ -4,16 +4,16 @@ import RxRelay
 class HomeViewModel: ViewModelType {
     
     struct Input {
-        var fetching: Observable<Void>
-        var tapMoreCompetitionButton: Observable<Void>
+        let fetching: Observable<Void>
+        let tapMoreCompetitionButton: Observable<Void>
     }
     
     struct Output {
-        var user: Observable<User>
-        var competitionVotes: Observable<[Vote]>
-        var errorMessage: Observable<String>
-        var activating: Observable<Bool>
-        var showMoreCompetitionPage: Observable<Void>
+        let user: Observable<User>
+        let competitionVotes: Observable<[Vote]>
+        let errorMessage: Observable<String>
+        let activating: Observable<Bool>
+        let showMoreCompetitionPage: Observable<Void>
     }
     
     struct Dependencies {

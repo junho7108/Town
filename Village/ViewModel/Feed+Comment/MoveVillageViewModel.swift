@@ -4,18 +4,18 @@ import RxCocoa
 class MoveVillageViewModel: ViewModelType {
     
     struct Input {
-        var fetchUser: Observable<Void>
-        var tapAllVilalge: Observable<Void>
-        var tapVillage: Observable<MBTIType>
+        let fetchUser: Observable<Void>
+        let tapAllVilalge: Observable<Void>
+        let tapVillage: Observable<MBTIType>
     }
     
     struct Output {
-        var user: Observable<User>
-        var villageSection: Observable<[VillageSection]>
-        var showAllVilalge: Observable<[MBTIType]>
-        var showVillage: Observable<MBTIType>
-        var errorMessage: Observable<String>
-        var activating: Observable<Bool>
+        let user: Observable<User>
+        let villageSection: Observable<[VillageSection]>
+        let showAllVilalge: Observable<[MBTIType]>
+        let showVillage: Observable<MBTIType>
+        let errorMessage: Observable<String>
+        let activating: Observable<Bool>
     }
     
     struct Dependencies {

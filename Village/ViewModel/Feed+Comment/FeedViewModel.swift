@@ -15,42 +15,42 @@ enum FeedShowType {
 class FeedViewModel: ViewModelType {
     
     struct Input {
-        var fetchUser: Observable<Void>
-        var fetchFeeds: Observable<Void>
-        var tapFeed: Observable<Feed>
-        var tapFeedOption: Observable<(Feed, FeedCell)>
-        var tapCategory: Observable<FeedCategory>
-        var tapUploadFeed: Observable<Void>
-        var tapDeleteFeed: Observable<Feed>
-        var tapEditFeed: Observable<Feed>
-        var tapDeclaration: Observable<Feed>
-        var tapHideFeed: Observable<(Feed, FeedCell)>
-        var tapMoveVillage: Observable<Void>
-        var tapUserProfile: Observable<User>
-        var tapFeedLike: Observable<Feed>
-        var fetchMoreFeeds: Observable<Void>
-        var refreshControlAction: Observable<Void>
+        let fetchUser: Observable<Void>
+        let fetchFeeds: Observable<Void>
+        let tapFeed: Observable<Feed>
+        let tapFeedOption: Observable<(Feed, FeedCell)>
+        let tapCategory: Observable<FeedCategory>
+        let tapUploadFeed: Observable<Void>
+        let tapDeleteFeed: Observable<Feed>
+        let tapEditFeed: Observable<Feed>
+        let tapDeclaration: Observable<Feed>
+        let tapHideFeed: Observable<(Feed, FeedCell)>
+        let tapMoveVillage: Observable<Void>
+        let tapUserProfile: Observable<User>
+        let tapFeedLike: Observable<Feed>
+        let fetchMoreFeeds: Observable<Void>
+        let refreshControlAction: Observable<Void>
     }
     
     struct Output {
-        var user: Observable<User>
-        var feeds: Observable<[Feed]>
-        var filterdFeeds: Observable<[Feed]>
-        var allCategories: Observable<[FeedCategory]>
-        var selectedCategories: Observable<[FeedCategory]>
-        var showFeedCommentsPage: Observable<Feed>
-        var showUploadFeedPage: Observable<Void>
-        var showFeedOptionsPage: Observable<(Feed, FeedCell, [ActionSheetOption])>
+        let user: Observable<User>
+        let feeds: Observable<[Feed]>
+        let filterdFeeds: Observable<[Feed]>
+        let allCategories: Observable<[FeedCategory]>
+        let selectedCategories: Observable<[FeedCategory]>
+        let showFeedCommentsPage: Observable<Feed>
+        let showUploadFeedPage: Observable<Void>
+        let showFeedOptionsPage: Observable<(Feed, FeedCell, [ActionSheetOption])>
         
-        var showEditPage: Observable<Feed>
-        var showDeleteFeedPage: Observable<Void>
-        var showDeclarationPage: Observable<Feed>
-        var showHideFeedAnim: Observable<(Feed, FeedCell)>
+        let showEditPage: Observable<Feed>
+        let showDeleteFeedPage: Observable<Void>
+        let showDeclarationPage: Observable<Feed>
+        let showHideFeedAnim: Observable<(Feed, FeedCell)>
         
-        var showMoveVillagePage: Observable<Void>
-        var showUserProfilePage: Observable<User>
+        let showMoveVillagePage: Observable<Void>
+        let showUserProfilePage: Observable<User>
         
-        var showFeedLikes: Observable<Void>
+        let showFeedLikes: Observable<Void>
         
         let refreshControlCompleted: Observable<Void>
         let isLoadingSpinnerAvailable: Observable<Bool>

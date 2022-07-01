@@ -9,18 +9,18 @@ enum DeclarationType {
 class DeclarationViewModel: ViewModelType {
 
     struct Input {
-        var tapDeclarationType: Observable<DeclarationType>
-        var contentDidChange: Observable<String>
-        var tapCompleteButton: Observable<Void>
-        var tapDeclarationButton: Observable<Void>
+        let tapDeclarationType: Observable<DeclarationType>
+        let contentDidChange: Observable<String>
+        let tapCompleteButton: Observable<Void>
+        let tapDeclarationButton: Observable<Void>
     }
     
     struct Output {
-        var updateContent: Observable<String>
-        var selectedDeclarationType: Observable<DeclarationType>
-        var completeButtonEnabled: Observable<Bool>
-        var showDeclarationConfirmPage: Observable<Void>
-        var declarationComplete: Observable<Void>
+        let updateContent: Observable<String>
+        let selectedDeclarationType: Observable<DeclarationType>
+        let completeButtonEnabled: Observable<Bool>
+        let showDeclarationConfirmPage: Observable<Void>
+        let declarationComplete: Observable<Void>
     }
    
     struct Dependencies {

@@ -4,16 +4,16 @@ import RxRelay
 class MBTISimpleTestFinishViewModel: ViewModelType {
     
     struct Input {
-        var tapCompleteButton: Observable<Void>
+        let tapCompleteButton: Observable<Void>
     }
     
     struct Output {
-        var mbti: Observable<MBTIType>
-        var showSignUpPage: Observable<Void>
+        let mbti: Observable<MBTIType>
+        let showSignUpPage: Observable<Void>
     }
     
     struct Dependencies {
-        var mbti: MBTIType
+        let mbti: MBTIType
     }
     
     var disposeBag: DisposeBag = .init()

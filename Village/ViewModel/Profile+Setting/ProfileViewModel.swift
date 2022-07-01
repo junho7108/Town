@@ -4,18 +4,18 @@ import RxRelay
 class ProfileViewModel: ViewModelType {
     
     struct Input {
-        var fetchingUser: Observable<Void>
-        var tapSettingOption: Observable<VillageSettingOption>
-        var tapEditProfile: Observable<Void>
-        var tapLogout: Observable<Void>
+        let fetchingUser: Observable<Void>
+        let tapSettingOption: Observable<VillageSettingOption>
+        let tapEditProfile: Observable<Void>
+        let tapLogout: Observable<Void>
     }
     
     struct Output {
-        var user: Observable<User>
-        var showSelectedOptionPage: Observable<VillageSettingOption>
-        var showEditProfilePage: Observable<Void>
-        var showLogoutPage: Observable<Void>
-        var errorMessage: Observable<String>
+        let user: Observable<User>
+        let showSelectedOptionPage: Observable<VillageSettingOption>
+        let showEditProfilePage: Observable<Void>
+        let showLogoutPage: Observable<Void>
+        let errorMessage: Observable<String>
     }
     
     struct Dependencies {

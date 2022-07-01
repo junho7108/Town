@@ -3,35 +3,35 @@ import RxRelay
 
 class CommentViewModel: ViewModelType {
     struct Input {
-        var fetching: Observable<Void>
-        var tapUploadComment: Observable<UploadCommentRequest>
-        var tapComentOption: Observable<(Comment, CommentType)>
-        var tapDeleteComment: Observable<Comment>
-        var tapDeleteCommentReply: Observable<Comment>
+        let fetching: Observable<Void>
+        let tapUploadComment: Observable<UploadCommentRequest>
+        let tapComentOption: Observable<(Comment, CommentType)>
+        let tapDeleteComment: Observable<Comment>
+        let tapDeleteCommentReply: Observable<Comment>
         
-        var tapShowGallery: Observable<Void>
-        var tapHideGallery: Observable<Void>
-        var didSelectImage: Observable<[UIImage]>
-        var tapRemoveImage: Observable<Void>
+        let tapShowGallery: Observable<Void>
+        let tapHideGallery: Observable<Void>
+        let didSelectImage: Observable<[UIImage]>
+        let tapRemoveImage: Observable<Void>
     
-        var tapLikeComment: Observable<Comment>
-        var tapLikeCommentReply: Observable<Comment>
+        let tapLikeComment: Observable<Comment>
+        let tapLikeCommentReply: Observable<Comment>
         
-        var tapEditComment: Observable<Comment>
-        var tapEditReply: Observable<Comment>
-        var tapCancelEditComment: Observable<Void>
+        let tapEditComment: Observable<Comment>
+        let tapEditReply: Observable<Comment>
+        let tapCancelEditComment: Observable<Void>
     }
     
     struct Output {
-        var comment: Observable<[CommentSection]>
-        var showCommentOption: Observable<(Comment, [ActionSheetOption], CommentType)>
-        var showDeleteCommentPage: Observable<Void>
-        var showDeleteCommentReplyPage: Observable<Void>
+        let comment: Observable<[CommentSection]>
+        let showCommentOption: Observable<(Comment, [ActionSheetOption], CommentType)>
+        let showDeleteCommentPage: Observable<Void>
+        let showDeleteCommentReplyPage: Observable<Void>
        
-        var showGallery: Observable<Void>
-        var hideGallery: Observable<Void>
-        var selectedImages: Observable<[UIImage]>
-        var removeImage: Observable<Void>
+        let showGallery: Observable<Void>
+        let hideGallery: Observable<Void>
+        let selectedImages: Observable<[UIImage]>
+        let removeImage: Observable<Void>
     }
     
     struct Dependencies {
