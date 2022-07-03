@@ -1,7 +1,7 @@
 enum APIKey {
-    static let baseURL = "https://traydvillage.com"
-    static let googleClientID: String = "19955321423-ik1jd7cmv9fna9ko523lhacjlttudjbs.apps.googleusercontent.com"
-    static let kakaoNativeAppKey: String = "248989a70af3db891d97eaa9be1a7fdf"
+    static let baseURL = "Private"
+    static let googleClientID: String = "Private"
+    static let kakaoNativeAppKey: String = "Private"
 }
 
 enum VillageServiceURL {
