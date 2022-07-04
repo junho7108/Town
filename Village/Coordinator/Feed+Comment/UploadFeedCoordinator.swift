@@ -1,7 +1,7 @@
 import Foundation
 import Alamofire
 
-class UploadFeedCoordinator: Coordinator {
+final class UploadFeedCoordinator: Coordinator {
     
     var delegate: CoordinatorFinishDelegate?
     

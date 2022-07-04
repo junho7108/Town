@@ -16,7 +16,7 @@ enum SocialLoginType: String, Codable {
     }
 }
 
-class LoginViewModel: ViewModelType {
+final class LoginViewModel: ViewModelType {
     
     struct Input {
         let tapSocialLogin: Observable<SocialLoginType>

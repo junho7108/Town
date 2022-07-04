@@ -37,7 +37,7 @@ protocol FeedRepository: AnyObject {
     func saveFeed(feed: Feed) -> Single<NetworkResult<SaveResponse>>
 }
 
-class FeedRepositoryImpl: FeedRepository {
+final class FeedRepositoryImpl: FeedRepository {
     private let service: NetworkService
     
     init(service: NetworkService = NetworkService()) {

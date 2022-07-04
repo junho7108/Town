@@ -12,7 +12,7 @@ enum FeedShowType {
     case showSaveFeeds
 }
 
-class FeedViewModel: ViewModelType {
+final class FeedViewModel: ViewModelType {
     
     struct Input {
         let fetchUser: Observable<Void>

@@ -1,7 +1,7 @@
 import RxSwift
 import RxRelay
 
-class HomeViewModel: ViewModelType {
+final class HomeViewModel: ViewModelType {
     
     struct Input {
         let fetching: Observable<Void>

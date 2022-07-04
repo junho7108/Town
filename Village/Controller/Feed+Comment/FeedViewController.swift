@@ -3,7 +3,7 @@ import RxSwift
 import RxCocoa
 import RxGesture
 
-class FeedViewController: BaseViewController {
+final class FeedViewController: BaseViewController {
     
     var coordinator: FeedCoordinator?
     

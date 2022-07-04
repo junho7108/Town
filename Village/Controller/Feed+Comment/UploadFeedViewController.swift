@@ -4,7 +4,7 @@ import RxSwift
 import RxCocoa
 import RxKeyboard
 
-class UploadFeedViewController: BaseViewController {
+final class UploadFeedViewController: BaseViewController {
     
     //MARK: - Properties
     

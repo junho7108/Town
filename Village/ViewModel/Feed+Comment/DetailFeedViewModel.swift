@@ -2,7 +2,7 @@ import RxSwift
 import RxRelay
 import Alamofire
 
-class DetailFeedViewModel: ViewModelType {
+final class DetailFeedViewModel: ViewModelType {
     
     struct Input {
         let fetching: Observable<Void>

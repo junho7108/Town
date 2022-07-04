@@ -2,7 +2,7 @@ import RxSwift
 import RxCocoa
 import KakaoSDKUser
 
-class SignUpProfileViewModel: ViewModelType {
+final class SignUpProfileViewModel: ViewModelType {
     
     struct Input {
         let tapSelectGender: Observable<Gender>

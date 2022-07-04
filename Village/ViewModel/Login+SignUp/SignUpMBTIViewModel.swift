@@ -2,7 +2,7 @@ import RxSwift
 import RxCocoa
 import os
 
-class SignUpMBTIViewModel: ViewModelType {
+final class SignUpMBTIViewModel: ViewModelType {
    
     struct Input {
         let tapMBTIEnergy: Observable<MBTIEnergy>

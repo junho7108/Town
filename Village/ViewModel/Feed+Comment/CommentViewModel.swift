@@ -1,7 +1,7 @@
 import RxSwift
 import RxRelay
 
-class CommentViewModel: ViewModelType {
+final class CommentViewModel: ViewModelType {
     struct Input {
         let fetching: Observable<Void>
         let tapUploadComment: Observable<UploadCommentRequest>

@@ -1,7 +1,7 @@
 import RxSwift
 import RxRelay
 
-class MoreCompetitionViewModel: ViewModelType {
+final class MoreCompetitionViewModel: ViewModelType {
     
     struct Input {
         let fetching: Observable<Void>

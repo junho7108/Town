@@ -5,7 +5,7 @@ struct DuplicateNicknameCheckResponse: Codable {
     let duplicate: Bool
 }
 
-class SignUpNicknameViewModel: ViewModelType {
+final class SignUpNicknameViewModel: ViewModelType {
     
     struct Input {
         let editUserNickname: Observable<String>

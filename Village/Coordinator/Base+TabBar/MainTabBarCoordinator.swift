@@ -1,7 +1,7 @@
 import Foundation
 import UIKit
 
-class MainTabBarCoordinator: NSObject, Coordinator {
+final class MainTabBarCoordinator: NSObject, Coordinator {
 
     var parentCoordinator: Coordinator?
     

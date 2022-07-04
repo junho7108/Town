@@ -3,7 +3,7 @@ import RxRelay
 import KakaoSDKUser
 import KakaoSDKAuth
 
-class LaunchViewModel: ViewModelType {
+final class LaunchViewModel: ViewModelType {
     
     struct Input {
         let viewDidLoad: Observable<Void>

@@ -1,7 +1,7 @@
 import Foundation
 import Alamofire
 
-class DetailFeedCoordinator: NSObject, Coordinator {
+final class DetailFeedCoordinator: NSObject, Coordinator {
     
     var parent: Coordinator?
     

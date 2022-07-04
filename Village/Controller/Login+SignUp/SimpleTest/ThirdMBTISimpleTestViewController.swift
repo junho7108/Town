@@ -1,6 +1,6 @@
 import UIKit
 
-class ThirdMBTISimpleTestViewController: BaseViewController {
+final class ThirdMBTISimpleTestViewController: BaseViewController {
     
     var coordinator: ThirdMBTISimpleTestCoordinator?
     

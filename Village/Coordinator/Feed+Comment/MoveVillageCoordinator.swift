@@ -1,6 +1,6 @@
 import Alamofire
 
-class MoveVillageCoordinator: Coordinator {
+final class MoveVillageCoordinator: Coordinator {
     var delegate: CoordinatorFinishDelegate?
     
     var presenter: VillageNavigationController

@@ -1,6 +1,6 @@
 import UIKit
 
-class AppVersionViewController: BaseViewController {
+final class AppVersionViewController: BaseViewController {
     
     var coordinator: AppVersionCoordinator?
     

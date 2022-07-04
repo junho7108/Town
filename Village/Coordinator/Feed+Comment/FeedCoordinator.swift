@@ -3,7 +3,7 @@ import UIKit
 import Alamofire
 import KakaoSDKUser
 
-class FeedCoordinator: NSObject, Coordinator {
+final class FeedCoordinator: NSObject, Coordinator {
     var delegate: CoordinatorFinishDelegate?
     
     var presenter: VillageNavigationController

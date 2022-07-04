@@ -1,7 +1,7 @@
 import Foundation
 import RxSwift
 
-class UserUsecase {
+final class UserUsecase {
     private let repository: UserRepositoryType
     
     init(repository: UserRepositoryType) {

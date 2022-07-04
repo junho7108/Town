@@ -4,7 +4,7 @@ import Accelerate
 import Alamofire
 import os
 
-class UploadFeedViewModel: ViewModelType {
+final class UploadFeedViewModel: ViewModelType {
     
     struct Input {
         let titleDidChange: Observable<String>

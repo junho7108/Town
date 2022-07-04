@@ -1,4 +1,4 @@
-class SignUpProfileCoordinator: Coordinator {
+final class SignUpProfileCoordinator: Coordinator {
     
     var parent: Coordinator?
     

@@ -2,7 +2,7 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-class SignUpProfileViewController: BaseViewController {
+final class SignUpProfileViewController: BaseViewController {
     
     //MARK: - Properties
     

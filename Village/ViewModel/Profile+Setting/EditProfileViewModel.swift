@@ -1,7 +1,7 @@
 import RxSwift
 import RxRelay
 
-class EditProfileViewModel: ViewModelType {
+final class EditProfileViewModel: ViewModelType {
     
     struct Input {
         let tapMBTIEnergy: Observable<MBTIEnergy>

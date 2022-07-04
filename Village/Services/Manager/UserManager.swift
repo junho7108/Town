@@ -1,6 +1,6 @@
 import KakaoSDKUser
 
-class UserManager {
+final class UserManager {
     
     static let shared = UserManager()
     

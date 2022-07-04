@@ -1,4 +1,4 @@
-class LaunchCoordinator: Coordinator {
+final class LaunchCoordinator: Coordinator {
     var delegate: CoordinatorFinishDelegate?
     
     var presenter: VillageNavigationController

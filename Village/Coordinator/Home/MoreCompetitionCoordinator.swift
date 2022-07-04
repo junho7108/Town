@@ -1,4 +1,4 @@
-class MoreCompetitionCoordinator: Coordinator {
+final class MoreCompetitionCoordinator: Coordinator {
     var delegate: CoordinatorFinishDelegate?
     
     var presenter: VillageNavigationController

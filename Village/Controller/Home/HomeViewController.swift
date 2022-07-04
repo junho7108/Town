@@ -2,7 +2,7 @@ import UIKit
 import FloatingPanel
 import RxSwift
 
-class HomeViewController: BaseViewController {
+final class HomeViewController: BaseViewController {
     
     var coordinator: HomeCoordinator?
     

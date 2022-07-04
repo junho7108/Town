@@ -3,7 +3,7 @@ import RxSwift
 import RxCocoa
 import RxKeyboard
 
-class SignUpNicknameViewController: BaseViewController {
+final class SignUpNicknameViewController: BaseViewController {
     
     //MARK: - Properties
     

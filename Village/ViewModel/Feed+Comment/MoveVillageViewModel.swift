@@ -1,7 +1,7 @@
 import RxSwift
 import RxCocoa
 
-class MoveVillageViewModel: ViewModelType {
+final class MoveVillageViewModel: ViewModelType {
     
     struct Input {
         let fetchUser: Observable<Void>

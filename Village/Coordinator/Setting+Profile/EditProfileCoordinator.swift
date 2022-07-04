@@ -1,4 +1,4 @@
-class EditProfileCoordinator: Coordinator {
+final class EditProfileCoordinator: Coordinator {
     var delegate: CoordinatorFinishDelegate?
     
     var presenter: VillageNavigationController

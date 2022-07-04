@@ -1,5 +1,6 @@
 import Alamofire
-class UserProfileCoordinator: Coordinator {
+
+final class UserProfileCoordinator: Coordinator {
     
     var delegate: CoordinatorFinishDelegate?
     

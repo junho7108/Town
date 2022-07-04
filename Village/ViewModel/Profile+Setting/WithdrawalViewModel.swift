@@ -2,7 +2,7 @@ import Foundation
 import RxSwift
 import RxRelay
 
-class WithdrawalViewModel: ViewModelType {
+final class WithdrawalViewModel: ViewModelType {
    
     struct Input {
         let tapAgreeButton: Observable<Void>

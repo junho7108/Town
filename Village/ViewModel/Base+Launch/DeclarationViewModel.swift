@@ -6,7 +6,7 @@ enum DeclarationType {
 }
 
 
-class DeclarationViewModel: ViewModelType {
+final class DeclarationViewModel: ViewModelType {
 
     struct Input {
         let tapDeclarationType: Observable<DeclarationType>

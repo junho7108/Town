@@ -1,7 +1,7 @@
 import Alamofire
 import KakaoSDKUser
 
-class CommentCoordinator: Coordinator {
+final class CommentCoordinator: Coordinator {
     var delegate: CoordinatorFinishDelegate?
     
     var presenter: VillageNavigationController

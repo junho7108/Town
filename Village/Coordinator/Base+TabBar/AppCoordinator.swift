@@ -1,7 +1,7 @@
 import Foundation
 import UIKit
 
-class AppCoordinator: NSObject, Coordinator {
+final class AppCoordinator: NSObject, Coordinator {
     var delegate: CoordinatorFinishDelegate?
     
     var presenter: VillageNavigationController

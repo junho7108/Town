@@ -1,6 +1,6 @@
 import Alamofire
 
-class WithdrawalCoordinator: Coordinator {
+final class WithdrawalCoordinator: Coordinator {
     var delegate: CoordinatorFinishDelegate?
     
     var presenter: VillageNavigationController

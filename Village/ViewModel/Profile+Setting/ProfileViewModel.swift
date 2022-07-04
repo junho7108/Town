@@ -1,7 +1,7 @@
 import RxSwift
 import RxRelay
 
-class ProfileViewModel: ViewModelType {
+final class ProfileViewModel: ViewModelType {
     
     struct Input {
         let fetchingUser: Observable<Void>
