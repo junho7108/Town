@@ -1,4 +1,4 @@
-class SignUpCompleteCoordinator: Coordinator {
+final class SignUpCompleteCoordinator: Coordinator {
     var delegate: CoordinatorFinishDelegate?
     
     var presenter: VillageNavigationController

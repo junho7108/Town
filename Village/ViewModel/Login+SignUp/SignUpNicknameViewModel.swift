@@ -5,21 +5,21 @@ struct DuplicateNicknameCheckResponse: Codable {
     let duplicate: Bool
 }
 
-class SignUpNicknameViewModel: ViewModelType {
+final class SignUpNicknameViewModel: ViewModelType {
     
     struct Input {
-        var editUserNickname: Observable<String>
-        var tapCompleteButton: Observable<Void>
+        let editUserNickname: Observable<String>
+        let tapCompleteButton: Observable<Void>
     }
     
     struct Output {
-        var showSignUpProfilePage: Observable<SignUpRequest>
-        var showErrorMessage: Observable<String>
+        let showSignUpProfilePage: Observable<SignUpRequest>
+        let showErrorMessage: Observable<String>
     }
     
     struct Dependencies {
-        var usecase: AuthUsecase
-        var request: SignUpRequest
+        let usecase: AuthUsecase
+        let request: SignUpRequest
     }
     
     var disposeBag: DisposeBag = .init()

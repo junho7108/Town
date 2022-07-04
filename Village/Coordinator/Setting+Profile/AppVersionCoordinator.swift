@@ -1,4 +1,4 @@
-class AppVersionCoordinator: Coordinator {
+final class AppVersionCoordinator: Coordinator {
     
     var delegate: CoordinatorFinishDelegate?
     

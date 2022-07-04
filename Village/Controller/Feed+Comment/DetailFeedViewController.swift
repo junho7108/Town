@@ -5,7 +5,7 @@ import RxDataSources
 import RxKeyboard
 import RxViewController
 
-class DetailFeedViewController: BaseViewController {
+final class DetailFeedViewController: BaseViewController {
     
     var coordinator: DetailFeedCoordinator?
 

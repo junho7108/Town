@@ -2,7 +2,7 @@ import Foundation
 import UIKit
 import Alamofire
 
-class ProfileSettingCoordinator: Coordinator {
+final class ProfileSettingCoordinator: Coordinator {
     
     var delegate: CoordinatorFinishDelegate?
     

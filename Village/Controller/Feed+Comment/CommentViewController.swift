@@ -4,7 +4,7 @@ import RxCocoa
 import RxDataSources
 import RxKeyboard
 
-class CommentViewController: BaseViewController, UIScrollViewDelegate {
+final class CommentViewController: BaseViewController, UIScrollViewDelegate {
     
     var coordinator: CommentCoordinator?
     

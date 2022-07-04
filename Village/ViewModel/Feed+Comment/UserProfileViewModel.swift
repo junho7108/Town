@@ -2,7 +2,7 @@ import RxSwift
 import RxRelay
 import KakaoSDKUser
 
-class UserProfileViewModel: ViewModelType {
+final class UserProfileViewModel: ViewModelType {
     
     struct Input {
         let fetching: Observable<Void>

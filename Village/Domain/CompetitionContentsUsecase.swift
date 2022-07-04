@@ -1,6 +1,6 @@
 import RxSwift
 
-class CompetitionContentsUsecase {
+final class CompetitionContentsUsecase {
     private let repository: StubCompetitionContentsRepository
     
     init(repository: StubCompetitionContentsRepository) {

@@ -821,6 +821,7 @@
 			children = (
 				0D90D07027C8B45100BA9A27 /* ProfileSettingViewController.swift */,
 				0D9693C927E999FE00103198 /* EditProfileViewController.swift */,
+				0D6F568728190DBE006FA5A1 /* EditMBTIViewController.swift */,
 				0D5291E827FC0A810011B664 /* EditMBTIProfileViewController.swift */,
 				0D7F0FEC2812326F006754B5 /* AppVersionViewController.swift */,
 				0D7F0FF22812396E006754B5 /* WithdrawalViewController.swift */,
@@ -859,7 +860,6 @@
 			children = (
 				0D90D07827C8C37000BA9A27 /* ProfileViewModel.swift */,
 				0D9693CD27E99A6700103198 /* EditProfileViewModel.swift */,
-				0D6F568728190DBE006FA5A1 /* EditMBTIViewController.swift */,
 				0D7F0FF828123C35006754B5 /* WithdrawalViewModel.swift */,
 			);
 			path = "Profile+Setting";
@@ -1242,6 +1242,7 @@
 			developmentRegion = ko;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				ko,
 				en,
 				Base,
 			);

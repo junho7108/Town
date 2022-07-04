@@ -5,7 +5,7 @@ protocol CompetitionContentsRepositroyType: AnyObject {
     func fetchCompetitionContents() -> Single<[Vote]>
 }
 
-class StubCompetitionContentsRepository: CompetitionContentsRepositroyType {
+final class StubCompetitionContentsRepository: CompetitionContentsRepositroyType {
     
     func fetchCompetitionContents() -> Single<[Vote]> {
         return Single.create { single in

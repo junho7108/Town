@@ -8,7 +8,7 @@ import KakaoSDKUser
 import RxSwift
 import RxRelay
 
-class RxKakaoLoginManager: NSObject, SocialLoginManagerType {
+final class RxKakaoLoginManager: NSObject, SocialLoginManagerType {
 
     var loginToken: PublishRelay<String> = .init()
     

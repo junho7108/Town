@@ -1,4 +1,4 @@
-class FirstMBTISimpleTestCoordinator: Coordinator {
+final class FirstMBTISimpleTestCoordinator: Coordinator {
     
     var delegate: CoordinatorFinishDelegate?
     

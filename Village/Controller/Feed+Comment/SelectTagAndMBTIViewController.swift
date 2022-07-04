@@ -1,6 +1,6 @@
 import UIKit
 
-class SelectTagAndMBTIViewController: BaseViewController {
+final class SelectTagAndMBTIViewController: BaseViewController {
     
     //MARK: - UI Properties
     

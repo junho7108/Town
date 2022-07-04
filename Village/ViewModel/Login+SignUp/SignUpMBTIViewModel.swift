@@ -2,30 +2,30 @@ import RxSwift
 import RxCocoa
 import os
 
-class SignUpMBTIViewModel: ViewModelType {
+final class SignUpMBTIViewModel: ViewModelType {
    
     struct Input {
-        var tapMBTIEnergy: Observable<MBTIEnergy>
-        var tapMBTIInformation: Observable<MBTIInformation>
-        var tapMBTIDecisions: Observable<MBTIDecisions>
-        var tapMBTILifestyle: Observable<MBTILifestyle>
-        var tapComplete: Observable<Void>
-        var tapMBTILink: Observable<Void>
-        var tapSimpleMBTITest: Observable<Void>
-        var tapDetailMBTITest: Observable<Void>
+        let tapMBTIEnergy: Observable<MBTIEnergy>
+        let tapMBTIInformation: Observable<MBTIInformation>
+        let tapMBTIDecisions: Observable<MBTIDecisions>
+        let tapMBTILifestyle: Observable<MBTILifestyle>
+        let tapComplete: Observable<Void>
+        let tapMBTILink: Observable<Void>
+        let tapSimpleMBTITest: Observable<Void>
+        let tapDetailMBTITest: Observable<Void>
     }
     
     struct Output {
-        var selectButtonEnabled: Observable<Bool>
-        var selectedMBTI: Observable<MBTIType?>
-        var showSignInPage: Observable<SignUpRequest>
-        var showMBTILinkPage: Observable<Void>
-        var showSimpleMBTITestPage: Observable<Void>
-        var showDetailMBTITestPage: Observable<Void>
+        let selectButtonEnabled: Observable<Bool>
+        let selectedMBTI: Observable<MBTIType?>
+        let showSignInPage: Observable<SignUpRequest>
+        let showMBTILinkPage: Observable<Void>
+        let showSimpleMBTITestPage: Observable<Void>
+        let showDetailMBTITestPage: Observable<Void>
     }
     
     struct Dependencies {
-        var signUpRequest: SignUpRequest
+        let signUpRequest: SignUpRequest
     }
     
     var disposeBag: DisposeBag = .init()

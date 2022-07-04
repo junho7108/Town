@@ -1,6 +1,6 @@
 import UIKit
 
-class SignUpCompleteViewController: BaseViewController {
+final class SignUpCompleteViewController: BaseViewController {
     
     var coordinator: SignUpCompleteCoordinator?
     

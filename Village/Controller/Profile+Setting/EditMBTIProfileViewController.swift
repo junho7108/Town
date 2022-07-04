@@ -1,6 +1,6 @@
 import UIKit
 
-class EditMBTIProfileViewController: BaseViewController {
+final class EditMBTIProfileViewController: BaseViewController {
     
     let contentView: EditMBTIView
     

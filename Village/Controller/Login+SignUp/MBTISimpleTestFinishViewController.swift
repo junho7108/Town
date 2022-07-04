@@ -1,6 +1,6 @@
 import UIKit
 
-class MBTISimpleTestFinishViewController: BaseViewController {
+final class MBTISimpleTestFinishViewController: BaseViewController {
     
     var coordinator: MBTISimpleTestFinishCoordinator?
     

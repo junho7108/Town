@@ -1,31 +1,31 @@
 import RxSwift
 import RxRelay
 
-class EditProfileViewModel: ViewModelType {
+final class EditProfileViewModel: ViewModelType {
     
     struct Input {
-        var tapMBTIEnergy: Observable<MBTIEnergy>
-        var tapMBTIInformation: Observable<MBTIInformation>
-        var tapMBTIDecisions: Observable<MBTIDecisions>
-        var tapMBTILifestyle: Observable<MBTILifestyle>
+        let tapMBTIEnergy: Observable<MBTIEnergy>
+        let tapMBTIInformation: Observable<MBTIInformation>
+        let tapMBTIDecisions: Observable<MBTIDecisions>
+        let tapMBTILifestyle: Observable<MBTILifestyle>
         
-        var tapEditMBTI: Observable<Void>
+        let tapEditMBTI: Observable<Void>
         
-        var tapEditNickname: Observable<String>
-        var tapEditDate: Observable<String>
-        var tapEditGender: Observable<Gender>
-        var tapComplete: Observable<Void>
+        let tapEditNickname: Observable<String>
+        let tapEditDate: Observable<String>
+        let tapEditGender: Observable<Gender>
+        let tapComplete: Observable<Void>
     }
     
     struct Output {
-        var showMBTIBottomSheetPage: Observable<Void>
+        let showMBTIBottomSheetPage: Observable<Void>
         
-        var editedNickname: Observable<String>
-        var editedMBTI: Observable<MBTIType>
-        var editedDate: Observable<String>
-        var editedGender: Observable<Gender>
+        let editedNickname: Observable<String>
+        let editedMBTI: Observable<MBTIType>
+        let editedDate: Observable<String>
+        let editedGender: Observable<Gender>
         
-        var editEnabled: Observable<Bool>
+        let editEnabled: Observable<Bool>
     }
     
     struct Dependencies {

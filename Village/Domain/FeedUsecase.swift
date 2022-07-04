@@ -1,7 +1,7 @@
 import Foundation
 import RxSwift
 
-class FeedUsecase {
+final class FeedUsecase {
     private let repositry: FeedRepository
     
     init(repository: FeedRepository) {

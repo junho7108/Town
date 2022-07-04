@@ -1,5 +1,6 @@
 import Alamofire
-class HomeCoordinator: Coordinator {
+
+final class HomeCoordinator: Coordinator {
     var delegate: CoordinatorFinishDelegate?
     
     var presenter: VillageNavigationController
