@@ -1,6 +1,6 @@
 import Foundation
 
-class CompetitionContentCommentCoordinator: Coordinator {
+final class CompetitionContentCommentCoordinator: Coordinator {
     var delegate: CoordinatorFinishDelegate?
     
     var presenter: VillageNavigationController

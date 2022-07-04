@@ -2,24 +2,24 @@ import RxSwift
 import RxCocoa
 import KakaoSDKUser
 
-class SignUpProfileViewModel: ViewModelType {
+final class SignUpProfileViewModel: ViewModelType {
     
     struct Input {
-        var tapSelectGender: Observable<Gender>
-        var tapSelectDate: Observable<String>
-        var tapCompleteButton: Observable<Void>
+        let tapSelectGender: Observable<Gender>
+        let tapSelectDate: Observable<String>
+        let tapCompleteButton: Observable<Void>
     }
     
     struct Output {
-        var completeButtonEnabled: Observable<Bool>
-        var showMainPage: Observable<Void>
-        var activating: Observable<Bool>
-        var showErrorMessage: Observable<String>
+        let completeButtonEnabled: Observable<Bool>
+        let showMainPage: Observable<Void>
+        let activating: Observable<Bool>
+        let showErrorMessage: Observable<String>
     }
     
     struct Dependencies {
         let usecase: AuthUsecase
-        var request: SignUpRequest
+        let request: SignUpRequest
     }
     
     var disposeBag: DisposeBag = .init()

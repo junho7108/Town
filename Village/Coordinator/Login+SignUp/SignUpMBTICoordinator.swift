@@ -1,6 +1,6 @@
 import Foundation
 
-class SignUpMBTICoordinator: Coordinator {
+final class SignUpMBTICoordinator: Coordinator {
     var delegate: CoordinatorFinishDelegate?
     
     var presenter: VillageNavigationController

@@ -1,16 +1,16 @@
 import RxSwift
 import RxRelay
 
-class MoreCompetitionViewModel: ViewModelType {
+final class MoreCompetitionViewModel: ViewModelType {
     
     struct Input {
-        var fetching: Observable<Void>
-        var tapCompetitionContent: Observable<Vote>
+        let fetching: Observable<Void>
+        let tapCompetitionContent: Observable<Vote>
     }
     
     struct Output {
-        var competitionContents: Observable<[Vote]>
-        var showDetailCompetitionContentPage: Observable<Vote>
+        let competitionContents: Observable<[Vote]>
+        let showDetailCompetitionContentPage: Observable<Vote>
     }
     
     struct Dependencies {

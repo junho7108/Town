@@ -1,6 +1,6 @@
 import UIKit
 
-class MainTabBarViewController: UITabBarController {
+final class MainTabBarViewController: UITabBarController {
     
     enum TabBarItem: CaseIterable {
 //        case home

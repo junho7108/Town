@@ -16,17 +16,17 @@ enum SocialLoginType: String, Codable {
     }
 }
 
-class LoginViewModel: ViewModelType {
+final class LoginViewModel: ViewModelType {
     
     struct Input {
-        var tapSocialLogin: Observable<SocialLoginType>
+        let tapSocialLogin: Observable<SocialLoginType>
     }
     
     struct Output {
-        var showSignUpPage: Observable<SignUpRequest>
-        var showMainPage: Observable<Void>
-        var showErrorMessage: Observable<String>
-        var activated: Observable<Bool>
+        let showSignUpPage: Observable<SignUpRequest>
+        let showMainPage: Observable<Void>
+        let showErrorMessage: Observable<String>
+        let activated: Observable<Bool>
     }
     
     struct Dependencies {

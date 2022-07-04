@@ -1,7 +1,7 @@
 import UIKit
 import RxSwift
 
-class CompetitionContentCommentViewControlelr: BaseViewController {
+final class CompetitionContentCommentViewControlelr: BaseViewController {
     
     var coordinator: CompetitionContentCommentCoordinator?
     

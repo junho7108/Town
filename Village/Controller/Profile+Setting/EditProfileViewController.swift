@@ -4,7 +4,7 @@ import RxRelay
 import RxKeyboard
 import FloatingPanel
 
-class EditProfileViewController: BaseViewController {
+final class EditProfileViewController: BaseViewController {
     
     //MARK: - Properties
     

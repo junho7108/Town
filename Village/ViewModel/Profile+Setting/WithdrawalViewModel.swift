@@ -2,19 +2,19 @@ import Foundation
 import RxSwift
 import RxRelay
 
-class WithdrawalViewModel: ViewModelType {
+final class WithdrawalViewModel: ViewModelType {
    
     struct Input {
-        var tapAgreeButton: Observable<Void>
-        var tapWithdrawalButton: Observable<Void>
-        var tapWithdrawalCompleteButton: Observable<Void>
+        let tapAgreeButton: Observable<Void>
+        let tapWithdrawalButton: Observable<Void>
+        let tapWithdrawalCompleteButton: Observable<Void>
     }
     
     struct Output {
-        var withdrawalButtonEnabled: Observable<Bool>
-        var showWithdrawalPopup: Observable<Void>
-        var showWithdrawalPage: Observable<Void>
-        var errorMessage: Observable<String>
+        let withdrawalButtonEnabled: Observable<Bool>
+        let showWithdrawalPopup: Observable<Void>
+        let showWithdrawalPage: Observable<Void>
+        let errorMessage: Observable<String>
     }
     
     struct Dependencies {
@@ -23,7 +23,7 @@ class WithdrawalViewModel: ViewModelType {
     
     var disposeBag: DisposeBag = .init()
     
-    var dependencies: Dependencies
+    let dependencies: Dependencies
     
     required init(dependencies: Dependencies) {
         self.dependencies = dependencies

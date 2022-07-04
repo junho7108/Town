@@ -1,6 +1,6 @@
 import UIKit
 
-class HomeBottomSheetViewController: BaseViewController {
+final class HomeBottomSheetViewController: BaseViewController {
     
     //MARK: - UI Properties
     

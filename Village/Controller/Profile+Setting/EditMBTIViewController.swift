@@ -1,6 +1,6 @@
 import UIKit
 
-class EditMBTIViewController: BaseViewController {
+final class EditMBTIViewController: BaseViewController {
     
     //MARK: - UI Properties
     

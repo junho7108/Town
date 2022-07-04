@@ -1,6 +1,6 @@
 import UIKit
 
-class Utils {
+final class Utils {
     static func version() -> String {
         return Bundle.main.infoDictionary!["CFBundleShortVersionString"] as! String
     }

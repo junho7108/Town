@@ -1,6 +1,6 @@
 import RxSwift
 
-class AuthUsecase {
+final class AuthUsecase {
     private let repository: AuthRepository
     
     init(repository: AuthRepository) {

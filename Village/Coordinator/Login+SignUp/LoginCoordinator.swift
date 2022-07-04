@@ -1,7 +1,7 @@
 import Foundation
 import UIKit
 
-class LoginCoordinator: NSObject, Coordinator {
+final class LoginCoordinator: NSObject, Coordinator {
     var parentCoordinator: Coordinator?
     
     var delegate: CoordinatorFinishDelegate?

@@ -2,7 +2,7 @@ import UIKit
 import RxSwift
 import RxRelay
 
-class UserProfileViewController: BaseViewController {
+final class UserProfileViewController: BaseViewController {
     
     var coordinator: UserProfileCoordinator?
     

@@ -6,7 +6,7 @@ protocol UserRepositoryType: AnyObject {
     func accountWithdrawal()  -> Single<NetworkResult<Bool>>
 }
 
-class UserRepositoryImpl: UserRepositoryType {
+final class UserRepositoryImpl: UserRepositoryType {
     
     private let service: NetworkService
     

@@ -3,7 +3,7 @@ import RxSwift
 import RxCocoa
 import RxDataSources
 
-class MoveVillageViewController: BaseViewController {
+final class MoveVillageViewController: BaseViewController {
     
     var coordinator: MoveVillageCoordinator?
     

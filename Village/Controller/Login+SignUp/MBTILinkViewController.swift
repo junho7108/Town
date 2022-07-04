@@ -1,6 +1,6 @@
 import UIKit
 
-class MBTILinkViewController: BaseViewController {
+final class MBTILinkViewController: BaseViewController {
     
     //MARK: - UI Properties
     

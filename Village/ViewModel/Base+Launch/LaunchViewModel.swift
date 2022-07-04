@@ -3,16 +3,16 @@ import RxRelay
 import KakaoSDKUser
 import KakaoSDKAuth
 
-class LaunchViewModel: ViewModelType {
+final class LaunchViewModel: ViewModelType {
     
     struct Input {
-        var viewDidLoad: Observable<Void>
+        let viewDidLoad: Observable<Void>
     }
     
     struct Output {
-        var showMainPage: Observable<Void>
-        var showSignUpPage: Observable<Void>
-        var showErrorMessage: Observable<String>
+        let showMainPage: Observable<Void>
+        let showSignUpPage: Observable<Void>
+        let showErrorMessage: Observable<String>
     }
     
     struct Dependencies {

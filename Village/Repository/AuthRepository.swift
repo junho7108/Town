@@ -7,7 +7,7 @@ protocol AuthRepository: AnyObject {
     func checkNickname(nickname: String) -> Single<NetworkResult<DuplicateNicknameCheckResponse>>
 }
 
-class AuthRepositoryImpl: AuthRepository {
+final class AuthRepositoryImpl: AuthRepository {
    
     private let service: NetworkService
     

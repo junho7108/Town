@@ -2,7 +2,7 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-class WithdrawalViewController: BaseViewController {
+final class WithdrawalViewController: BaseViewController {
     
     var coordinator: WithdrawalCoordinator?
     

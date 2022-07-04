@@ -1,6 +1,6 @@
 import Foundation
 
-class SignUpNicknameCoordinator: Coordinator {
+final class SignUpNicknameCoordinator: Coordinator {
     
     var parent: Coordinator?
     

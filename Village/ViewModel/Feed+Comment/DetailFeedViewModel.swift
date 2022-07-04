@@ -2,57 +2,57 @@ import RxSwift
 import RxRelay
 import Alamofire
 
-class DetailFeedViewModel: ViewModelType {
+final class DetailFeedViewModel: ViewModelType {
     
     struct Input {
-        var fetching: Observable<Void>
-        var tapLikeFeed: Observable<Void>
-        var tapLikeComment: Observable<Comment>
-        var tapUploadComment: Observable<String>
-        var tapSaveFeed: Observable<Feed>
-        var tapFeedOption: Observable<Void>
-        var tapEditFeed: Observable<Feed>
-        var tapDeleteFeed: Observable<Void>
-        var tapDeclaration: Observable<Void>
-        var tapHideFeed: Observable<Feed>
+        let fetching: Observable<Void>
+        let tapLikeFeed: Observable<Void>
+        let tapLikeComment: Observable<Comment>
+        let tapUploadComment: Observable<String>
+        let tapSaveFeed: Observable<Feed>
+        let tapFeedOption: Observable<Void>
+        let tapEditFeed: Observable<Feed>
+        let tapDeleteFeed: Observable<Void>
+        let tapDeclaration: Observable<Void>
+        let tapHideFeed: Observable<Feed>
         
-        var tapShowGallery: Observable<Void>
-        var tapHideGallery: Observable<Void>
-        var didSelectImage: Observable<[UIImage]>
-        var tapRemoveImage: Observable<Void>
-        var tapCommentOption: Observable<Comment>
-        var tapDeleteComment: Observable<Comment>
-        var tapEditComment: Observable<Comment>
-        var tapCancelEditComment: Observable<Void>
+        let tapShowGallery: Observable<Void>
+        let tapHideGallery: Observable<Void>
+        let didSelectImage: Observable<[UIImage]>
+        let tapRemoveImage: Observable<Void>
+        let tapCommentOption: Observable<Comment>
+        let tapDeleteComment: Observable<Comment>
+        let tapEditComment: Observable<Comment>
+        let tapCancelEditComment: Observable<Void>
         
-        var fetchMoreComments: Observable<Void>
-        var refreshControlAction: Observable<Void>
+        let fetchMoreComments: Observable<Void>
+        let refreshControlAction: Observable<Void>
     }
     
     struct Output {
-        var feed: Observable<Feed>
+        let feed: Observable<Feed>
     
-        var comments: Observable<[CommentSection]>
-        var commentsCount: Observable<Int>
-        var uploadComment: Observable<Void>
-        var showSavedFeed: Observable<Bool>
-        var showFeedOptionsPage: Observable<[ActionSheetOption]>
+        let comments: Observable<[CommentSection]>
+        let commentsCount: Observable<Int>
+        let uploadComment: Observable<Void>
+        let showSavedFeed: Observable<Bool>
+        let showFeedOptionsPage: Observable<[ActionSheetOption]>
         
-        var showEditFeedPage: Observable<Feed>
-        var showDeleteFeedPage: Observable<Void>
-        var showDeclarationPage: Observable<Void>
+        let showEditFeedPage: Observable<Feed>
+        let showDeleteFeedPage: Observable<Void>
+        let showDeclarationPage: Observable<Void>
         
-        var showGallery: Observable<Void>
-        var hideGallery: Observable<Void>
-        var selectedImages: Observable<[UIImage]>
-        var removeImage: Observable<Void>
+        let showGallery: Observable<Void>
+        let hideGallery: Observable<Void>
+        let selectedImages: Observable<[UIImage]>
+        let removeImage: Observable<Void>
         
-        var showCommentOptionPage: Observable<(Comment, [ActionSheetOption])>
-        var showDeleteCommentMessage: Observable<Void>
-        var showHideFeedPage: Observable<Void>
+        let showCommentOptionPage: Observable<(Comment, [ActionSheetOption])>
+        let showDeleteCommentMessage: Observable<Void>
+        let showHideFeedPage: Observable<Void>
         
-        var showLikeFeed: Observable<LikeResponse>
-        var showLikeComment: Observable<LikeResponse>
+        let showLikeFeed: Observable<LikeResponse>
+        let showLikeComment: Observable<LikeResponse>
         
         let refreshControlCompleted: Observable<Void>
         let isLoadingSpinnerAvailable: Observable<Bool>

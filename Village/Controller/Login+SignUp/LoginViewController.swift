@@ -4,7 +4,7 @@ import RxCocoa
 import GoogleSignIn
 import AuthenticationServices
 
-class LoginViewController: BaseViewController {
+final class LoginViewController: BaseViewController {
     
     //MARK: - Properties
     

@@ -2,7 +2,7 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-class MoreCompetitionViewControlelr: BaseViewController {
+final class MoreCompetitionViewControlelr: BaseViewController {
     
     var coordinator: MoreCompetitionCoordinator?
     

@@ -4,7 +4,7 @@ import RxCocoa
 import RxGesture
 import MaterialComponents
 
-class SignUpMBTIViewConroller: BaseViewController {
+final class SignUpMBTIViewConroller: BaseViewController {
     
     //MARK: - Properties
     

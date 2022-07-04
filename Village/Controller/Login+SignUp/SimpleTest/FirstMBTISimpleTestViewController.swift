@@ -2,7 +2,7 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-class FirstMBTISimpleTestViewController: BaseViewController {
+final class FirstMBTISimpleTestViewController: BaseViewController {
     
     var coordinator: FirstMBTISimpleTestCoordinator?
     

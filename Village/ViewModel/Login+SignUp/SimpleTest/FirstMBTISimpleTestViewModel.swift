@@ -1,7 +1,7 @@
 import RxSwift
 import RxRelay
 
-class FirstMBTISimpleTestViewModel: ViewModelType {
+final class FirstMBTISimpleTestViewModel: ViewModelType {
     
     struct Input {
         var tapEButton: Observable<Void>

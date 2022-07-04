@@ -2,7 +2,7 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-class ProfileSettingViewController: BaseViewController {
+final class ProfileSettingViewController: BaseViewController {
     
     //MARK: - Properties
     
